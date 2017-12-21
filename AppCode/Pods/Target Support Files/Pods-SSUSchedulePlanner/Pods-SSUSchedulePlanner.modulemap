@@ -1,0 +1,6 @@
+framework module Pods_SSUSchedulePlanner {
+  umbrella header "Pods-SSUSchedulePlanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

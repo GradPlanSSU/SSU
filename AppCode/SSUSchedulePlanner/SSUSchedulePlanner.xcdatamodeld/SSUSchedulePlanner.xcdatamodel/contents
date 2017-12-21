@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Class" representedClassName="Class" syncable="YES">
+        <attribute name="catalog" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="class_Description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="class_Name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="class_Units" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ge_designation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="has_prerequisites" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="term" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Term" inverseName="classes" inverseEntity="Term" syncable="YES"/>
+    </entity>
+    <entity name="Schedule" representedClassName="Schedule" syncable="YES">
+        <attribute name="scheduleDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduleName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="terms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Term" inverseName="schedule" inverseEntity="Term" syncable="YES"/>
+    </entity>
+    <entity name="Term" representedClassName="Term" syncable="YES">
+        <attribute name="termName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="termUnits" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="classes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Class" inverseName="term" inverseEntity="Class" syncable="YES"/>
+        <relationship name="schedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Schedule" inverseName="terms" inverseEntity="Schedule" syncable="YES"/>
+    </entity>
+    <entity name="Token" representedClassName="Token" syncable="YES">
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Class" positionX="304" positionY="-189" width="128" height="165"/>
+        <element name="Schedule" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Term" positionX="124" positionY="-108" width="128" height="105"/>
+        <element name="Token" positionX="-182" positionY="-207" width="128" height="58"/>
+    </elements>
+</model>

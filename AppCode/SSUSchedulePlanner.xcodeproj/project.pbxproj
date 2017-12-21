@@ -1,0 +1,969 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		092AFB131FB18306001ED884 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AFB121FB18306001ED884 /* MainMenuViewController.swift */; };
+		092AFB151FB30ED1001ED884 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092AFB141FB30ED1001ED884 /* ScheduleTableViewCell.swift */; };
+		092AFB1A1FB3FCE6001ED884 /* ssuLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 092AFB191FB3FCE6001ED884 /* ssuLogo.jpg */; };
+		094063581FBBE66F00B7E705 /* ARRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094063571FBBE66F00B7E705 /* ARRViewController.swift */; };
+		094EC7DE1FD2983E009A5F70 /* ClassInsideTermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094EC7DD1FD2983E009A5F70 /* ClassInsideTermCell.swift */; };
+		09DB7C7A1FB15FC900C609D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB7C791FB15FC900C609D7 /* AppDelegate.swift */; };
+		09DB7C7C1FB15FC900C609D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB7C7B1FB15FC900C609D7 /* LoginViewController.swift */; };
+		09DB7C7F1FB15FC900C609D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DB7C7D1FB15FC900C609D7 /* Main.storyboard */; };
+		09DB7C821FB15FC900C609D7 /* SSUSchedulePlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09DB7C801FB15FC900C609D7 /* SSUSchedulePlanner.xcdatamodeld */; };
+		09DB7C841FB15FC900C609D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DB7C831FB15FC900C609D7 /* Assets.xcassets */; };
+		09DB7C871FB15FC900C609D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DB7C851FB15FC900C609D7 /* LaunchScreen.storyboard */; };
+		09DB7C921FB15FC900C609D7 /* SSUSchedulePlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB7C911FB15FC900C609D7 /* SSUSchedulePlannerTests.swift */; };
+		09DB7C9D1FB15FC900C609D7 /* SSUSchedulePlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB7C9C1FB15FC900C609D7 /* SSUSchedulePlannerUITests.swift */; };
+		09EEFC4A1FBBEE6B00EF6F04 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EEFC491FBBEE6B00EF6F04 /* CollapsibleTableViewHeader.swift */; };
+		09EEFC4C1FBBEEE500EF6F04 /* CollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EEFC4B1FBBEEE500EF6F04 /* CollapsibleTableViewCell.swift */; };
+		09EEFC511FBBEFFF00EF6F04 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EEFC501FBBEFFF00EF6F04 /* ExampleData.swift */; };
+		09EEFC531FBBF0B200EF6F04 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EEFC521FBBF0B200EF6F04 /* Extensions.swift */; };
+		3F0602E81FCA46F600E5BB96 /* TermTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0602E71FCA46F600E5BB96 /* TermTableViewCell.swift */; };
+		3F0602EA1FCA688D00E5BB96 /* searchClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0602E91FCA688D00E5BB96 /* searchClassController.swift */; };
+		3F06D4011FB93E7C00E19964 /* ssuLibrary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F06D4001FB93E7C00E19964 /* ssuLibrary.jpg */; };
+		3F1FABFB1FD373A600666682 /* NetRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FABFA1FD373A600666682 /* NetRequestHandler.swift */; };
+		3F2B78051FD22A67006DD663 /* AddClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B78041FD22A67006DD663 /* AddClassViewController.swift */; };
+		3F2B78071FD22F05006DD663 /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B78061FD22F05006DD663 /* SearchResultsTableViewCell.swift */; };
+		3F3442EC1FB29DB100DC077D /* CreateScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3442EB1FB29DB100DC077D /* CreateScheduleViewController.swift */; };
+		3F3442EE1FB29DD900DC077D /* MySchedulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3442ED1FB29DD900DC077D /* MySchedulesViewController.swift */; };
+		3F49D6431FCDE82E001D404A /* Schedule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F49D63D1FCDE82E001D404A /* Schedule+CoreDataClass.swift */; };
+		3F49D6441FCDE82E001D404A /* Schedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F49D63E1FCDE82E001D404A /* Schedule+CoreDataProperties.swift */; };
+		3F49D64A1FCDED31001D404A /* AddTermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F49D6491FCDED31001D404A /* AddTermViewController.swift */; };
+		3F5B3CF31FD5C9FA00F7B71F /* Term+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B3CF11FD5C9FA00F7B71F /* Term+CoreDataClass.swift */; };
+		3F5B3CF41FD5C9FA00F7B71F /* Term+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B3CF21FD5C9FA00F7B71F /* Term+CoreDataProperties.swift */; };
+		3F5CC1B71FD8ACD000B4EE79 /* Prerequisites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5CC1B61FD8ACD000B4EE79 /* Prerequisites.swift */; };
+		3F5CC1B91FD8D12600B4EE79 /* EnrollmentRequirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5CC1B81FD8D12600B4EE79 /* EnrollmentRequirements.swift */; };
+		3F8B3C441FDDE04C003823C5 /* Class+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B3C421FDDE04C003823C5 /* Class+CoreDataClass.swift */; };
+		3F8B3C451FDDE04C003823C5 /* Class+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B3C431FDDE04C003823C5 /* Class+CoreDataProperties.swift */; };
+		3F8B3C481FDE0CF9003823C5 /* Token+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B3C461FDE0CF9003823C5 /* Token+CoreDataClass.swift */; };
+		3F8B3C491FDE0CF9003823C5 /* Token+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B3C471FDE0CF9003823C5 /* Token+CoreDataProperties.swift */; };
+		3F9848A71FD23DFD0095C7B4 /* ClassDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9848A61FD23DFD0095C7B4 /* ClassDescriptionViewController.swift */; };
+		3FA871BE1FDB61B7001114C0 /* ssuSeawolf.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3FA871BD1FDB61B7001114C0 /* ssuSeawolf.jpeg */; };
+		3FDC0F691FD39B60007334D2 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC0F681FD39B60007334D2 /* Student.swift */; };
+		3FDC0F6B1FD39CC9007334D2 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC0F6A1FD39CC9007334D2 /* Course.swift */; };
+		3FDC0F6D1FD3A33E007334D2 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC0F6C1FD3A33E007334D2 /* Courses.swift */; };
+		3FE957B91FB3B8030004479E /* MySchedulesDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE957B81FB3B8030004479E /* MySchedulesDetailedViewController.swift */; };
+		3FE957BB1FB3BA5C0004479E /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE957BA1FB3BA5C0004479E /* ClassTableViewCell.swift */; };
+		6A284D810294D473CB525B9A /* Pods_SSUSchedulePlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D56827528EBE3B187D14634 /* Pods_SSUSchedulePlannerUITests.framework */; };
+		9CAD8348263C3583C7635591 /* Pods_SSUSchedulePlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67803B8D53BB94E3D00516E5 /* Pods_SSUSchedulePlannerTests.framework */; };
+		DC1D546E5408855A96EF94A7 /* Pods_SSUSchedulePlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688F8C924E9082773FEC105A /* Pods_SSUSchedulePlanner.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09DB7C8E1FB15FC900C609D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09DB7C6E1FB15FC900C609D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09DB7C751FB15FC900C609D7;
+			remoteInfo = SSUSchedulePlanner;
+		};
+		09DB7C991FB15FC900C609D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09DB7C6E1FB15FC900C609D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09DB7C751FB15FC900C609D7;
+			remoteInfo = SSUSchedulePlanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		092AFB121FB18306001ED884 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		092AFB141FB30ED1001ED884 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		092AFB191FB3FCE6001ED884 /* ssuLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ssuLogo.jpg; sourceTree = "<group>"; };
+		094063571FBBE66F00B7E705 /* ARRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRViewController.swift; sourceTree = "<group>"; };
+		094EC7DD1FD2983E009A5F70 /* ClassInsideTermCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassInsideTermCell.swift; sourceTree = "<group>"; };
+		09DB7C761FB15FC900C609D7 /* SSUSchedulePlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSUSchedulePlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09DB7C791FB15FC900C609D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09DB7C7B1FB15FC900C609D7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		09DB7C7E1FB15FC900C609D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09DB7C811FB15FC900C609D7 /* SSUSchedulePlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SSUSchedulePlanner.xcdatamodel; sourceTree = "<group>"; };
+		09DB7C831FB15FC900C609D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09DB7C861FB15FC900C609D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09DB7C881FB15FC900C609D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09DB7C8D1FB15FC900C609D7 /* SSUSchedulePlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSUSchedulePlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09DB7C911FB15FC900C609D7 /* SSUSchedulePlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSUSchedulePlannerTests.swift; sourceTree = "<group>"; };
+		09DB7C931FB15FC900C609D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09DB7C981FB15FC900C609D7 /* SSUSchedulePlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSUSchedulePlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09DB7C9C1FB15FC900C609D7 /* SSUSchedulePlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSUSchedulePlannerUITests.swift; sourceTree = "<group>"; };
+		09DB7C9E1FB15FC900C609D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09EEFC491FBBEE6B00EF6F04 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		09EEFC4B1FBBEEE500EF6F04 /* CollapsibleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		09EEFC501FBBEFFF00EF6F04 /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
+		09EEFC521FBBF0B200EF6F04 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0D56827528EBE3B187D14634 /* Pods_SSUSchedulePlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSUSchedulePlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0602E61FCA437800E5BB96 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		3F0602E71FCA46F600E5BB96 /* TermTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermTableViewCell.swift; sourceTree = "<group>"; };
+		3F0602E91FCA688D00E5BB96 /* searchClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchClassController.swift; sourceTree = "<group>"; };
+		3F06D4001FB93E7C00E19964 /* ssuLibrary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ssuLibrary.jpg; sourceTree = "<group>"; };
+		3F1FABFA1FD373A600666682 /* NetRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetRequestHandler.swift; sourceTree = "<group>"; };
+		3F2B78041FD22A67006DD663 /* AddClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassViewController.swift; sourceTree = "<group>"; };
+		3F2B78061FD22F05006DD663 /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
+		3F3442EB1FB29DB100DC077D /* CreateScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScheduleViewController.swift; sourceTree = "<group>"; };
+		3F3442ED1FB29DD900DC077D /* MySchedulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySchedulesViewController.swift; sourceTree = "<group>"; };
+		3F49D63D1FCDE82E001D404A /* Schedule+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F49D63E1FCDE82E001D404A /* Schedule+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F49D6491FCDED31001D404A /* AddTermViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTermViewController.swift; sourceTree = "<group>"; };
+		3F4FE99D1FDE3D8E0045F505 /* fountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fountain.png; sourceTree = "<group>"; };
+		3F5B3CF11FD5C9FA00F7B71F /* Term+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Term+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F5B3CF21FD5C9FA00F7B71F /* Term+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Term+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F5CC1B61FD8ACD000B4EE79 /* Prerequisites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prerequisites.swift; sourceTree = "<group>"; };
+		3F5CC1B81FD8D12600B4EE79 /* EnrollmentRequirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentRequirements.swift; sourceTree = "<group>"; };
+		3F8B3C421FDDE04C003823C5 /* Class+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F8B3C431FDDE04C003823C5 /* Class+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F8B3C461FDE0CF9003823C5 /* Token+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Token+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F8B3C471FDE0CF9003823C5 /* Token+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Token+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F9848A61FD23DFD0095C7B4 /* ClassDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDescriptionViewController.swift; sourceTree = "<group>"; };
+		3FA871BD1FDB61B7001114C0 /* ssuSeawolf.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ssuSeawolf.jpeg; sourceTree = "<group>"; };
+		3FDC0F681FD39B60007334D2 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		3FDC0F6A1FD39CC9007334D2 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		3FDC0F6C1FD3A33E007334D2 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
+		3FE957B81FB3B8030004479E /* MySchedulesDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySchedulesDetailedViewController.swift; sourceTree = "<group>"; };
+		3FE957BA1FB3BA5C0004479E /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		51B545520D2D8B42006726E7 /* Pods-SSUSchedulePlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSUSchedulePlanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSUSchedulePlanner/Pods-SSUSchedulePlanner.release.xcconfig"; sourceTree = "<group>"; };
+		67803B8D53BB94E3D00516E5 /* Pods_SSUSchedulePlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSUSchedulePlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		688F8C924E9082773FEC105A /* Pods_SSUSchedulePlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSUSchedulePlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2C39947856D317D6E58E49 /* Pods-SSUSchedulePlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSUSchedulePlannerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSUSchedulePlannerTests/Pods-SSUSchedulePlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A05ECF471CC4FF8EAE6CFEDA /* Pods-SSUSchedulePlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSUSchedulePlanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSUSchedulePlanner/Pods-SSUSchedulePlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		A67905BDDFDAB49E8AC76EBB /* Pods-SSUSchedulePlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSUSchedulePlannerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSUSchedulePlannerUITests/Pods-SSUSchedulePlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACBC0D922C5E76E5BC27E7B5 /* Pods-SSUSchedulePlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSUSchedulePlannerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSUSchedulePlannerTests/Pods-SSUSchedulePlannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9EFC03C1A48EDDE61982AB5 /* Pods-SSUSchedulePlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSUSchedulePlannerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSUSchedulePlannerUITests/Pods-SSUSchedulePlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09DB7C731FB15FC900C609D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1D546E5408855A96EF94A7 /* Pods_SSUSchedulePlanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09DB7C8A1FB15FC900C609D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CAD8348263C3583C7635591 /* Pods_SSUSchedulePlannerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09DB7C951FB15FC900C609D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A284D810294D473CB525B9A /* Pods_SSUSchedulePlannerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		092AFB181FB3FCA1001ED884 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3FA871BD1FDB61B7001114C0 /* ssuSeawolf.jpeg */,
+				3F4FE99D1FDE3D8E0045F505 /* fountain.png */,
+				3F0602E61FCA437800E5BB96 /* edit.png */,
+				3F06D4001FB93E7C00E19964 /* ssuLibrary.jpg */,
+				092AFB191FB3FCE6001ED884 /* ssuLogo.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		09DB7C6D1FB15FC900C609D7 = {
+			isa = PBXGroup;
+			children = (
+				3F86789E1FCF7A6400B95384 /* Models */,
+				09EEFC4F1FBBEFF200EF6F04 /* Data */,
+				3F397EB71FBA690F0026DD13 /* CellViews */,
+				3F397EB61FBA68D90026DD13 /* ViewControllers */,
+				09DB7C781FB15FC900C609D7 /* SSUSchedulePlanner */,
+				09DB7CAA1FB161B500C609D7 /* Views */,
+				092AFB181FB3FCA1001ED884 /* Images */,
+				09DB7C901FB15FC900C609D7 /* SSUSchedulePlannerTests */,
+				09DB7C9B1FB15FC900C609D7 /* SSUSchedulePlannerUITests */,
+				09DB7C771FB15FC900C609D7 /* Products */,
+				21D023F6C639A7BACDDD0C2A /* Pods */,
+				9EBC26E9D070262EBA329EF6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09DB7C771FB15FC900C609D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09DB7C761FB15FC900C609D7 /* SSUSchedulePlanner.app */,
+				09DB7C8D1FB15FC900C609D7 /* SSUSchedulePlannerTests.xctest */,
+				09DB7C981FB15FC900C609D7 /* SSUSchedulePlannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09DB7C781FB15FC900C609D7 /* SSUSchedulePlanner */ = {
+			isa = PBXGroup;
+			children = (
+				09DB7C791FB15FC900C609D7 /* AppDelegate.swift */,
+				09DB7C7D1FB15FC900C609D7 /* Main.storyboard */,
+				09DB7C831FB15FC900C609D7 /* Assets.xcassets */,
+				09DB7C851FB15FC900C609D7 /* LaunchScreen.storyboard */,
+				09DB7C881FB15FC900C609D7 /* Info.plist */,
+				09DB7C801FB15FC900C609D7 /* SSUSchedulePlanner.xcdatamodeld */,
+			);
+			path = SSUSchedulePlanner;
+			sourceTree = "<group>";
+		};
+		09DB7C901FB15FC900C609D7 /* SSUSchedulePlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				09DB7C911FB15FC900C609D7 /* SSUSchedulePlannerTests.swift */,
+				09DB7C931FB15FC900C609D7 /* Info.plist */,
+			);
+			path = SSUSchedulePlannerTests;
+			sourceTree = "<group>";
+		};
+		09DB7C9B1FB15FC900C609D7 /* SSUSchedulePlannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09DB7C9C1FB15FC900C609D7 /* SSUSchedulePlannerUITests.swift */,
+				09DB7C9E1FB15FC900C609D7 /* Info.plist */,
+			);
+			path = SSUSchedulePlannerUITests;
+			sourceTree = "<group>";
+		};
+		09DB7CAA1FB161B500C609D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		09EEFC4F1FBBEFF200EF6F04 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3FDC0F6A1FD39CC9007334D2 /* Course.swift */,
+				3FDC0F6C1FD3A33E007334D2 /* Courses.swift */,
+				3F5CC1B81FD8D12600B4EE79 /* EnrollmentRequirements.swift */,
+				09EEFC501FBBEFFF00EF6F04 /* ExampleData.swift */,
+				3F1FABFA1FD373A600666682 /* NetRequestHandler.swift */,
+				3F5CC1B61FD8ACD000B4EE79 /* Prerequisites.swift */,
+				3FDC0F681FD39B60007334D2 /* Student.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		21D023F6C639A7BACDDD0C2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A05ECF471CC4FF8EAE6CFEDA /* Pods-SSUSchedulePlanner.debug.xcconfig */,
+				51B545520D2D8B42006726E7 /* Pods-SSUSchedulePlanner.release.xcconfig */,
+				7D2C39947856D317D6E58E49 /* Pods-SSUSchedulePlannerTests.debug.xcconfig */,
+				ACBC0D922C5E76E5BC27E7B5 /* Pods-SSUSchedulePlannerTests.release.xcconfig */,
+				A67905BDDFDAB49E8AC76EBB /* Pods-SSUSchedulePlannerUITests.debug.xcconfig */,
+				D9EFC03C1A48EDDE61982AB5 /* Pods-SSUSchedulePlannerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3F397EB61FBA68D90026DD13 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F2B78041FD22A67006DD663 /* AddClassViewController.swift */,
+				3F49D6491FCDED31001D404A /* AddTermViewController.swift */,
+				094063571FBBE66F00B7E705 /* ARRViewController.swift */,
+				3F9848A61FD23DFD0095C7B4 /* ClassDescriptionViewController.swift */,
+				3F3442EB1FB29DB100DC077D /* CreateScheduleViewController.swift */,
+				09DB7C7B1FB15FC900C609D7 /* LoginViewController.swift */,
+				092AFB121FB18306001ED884 /* MainMenuViewController.swift */,
+				3FE957B81FB3B8030004479E /* MySchedulesDetailedViewController.swift */,
+				3F3442ED1FB29DD900DC077D /* MySchedulesViewController.swift */,
+				3F0602E91FCA688D00E5BB96 /* searchClassController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3F397EB71FBA690F0026DD13 /* CellViews */ = {
+			isa = PBXGroup;
+			children = (
+				094EC7DD1FD2983E009A5F70 /* ClassInsideTermCell.swift */,
+				3FE957BA1FB3BA5C0004479E /* ClassTableViewCell.swift */,
+				09EEFC4B1FBBEEE500EF6F04 /* CollapsibleTableViewCell.swift */,
+				09EEFC491FBBEE6B00EF6F04 /* CollapsibleTableViewHeader.swift */,
+				092AFB141FB30ED1001ED884 /* ScheduleTableViewCell.swift */,
+				3F2B78061FD22F05006DD663 /* SearchResultsTableViewCell.swift */,
+				3F0602E71FCA46F600E5BB96 /* TermTableViewCell.swift */,
+			);
+			path = CellViews;
+			sourceTree = "<group>";
+		};
+		3F86789E1FCF7A6400B95384 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B3C461FDE0CF9003823C5 /* Token+CoreDataClass.swift */,
+				3F8B3C471FDE0CF9003823C5 /* Token+CoreDataProperties.swift */,
+				3F8B3C421FDDE04C003823C5 /* Class+CoreDataClass.swift */,
+				3F8B3C431FDDE04C003823C5 /* Class+CoreDataProperties.swift */,
+				3F5B3CF11FD5C9FA00F7B71F /* Term+CoreDataClass.swift */,
+				3F5B3CF21FD5C9FA00F7B71F /* Term+CoreDataProperties.swift */,
+				09EEFC521FBBF0B200EF6F04 /* Extensions.swift */,
+				3F49D63D1FCDE82E001D404A /* Schedule+CoreDataClass.swift */,
+				3F49D63E1FCDE82E001D404A /* Schedule+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9EBC26E9D070262EBA329EF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				688F8C924E9082773FEC105A /* Pods_SSUSchedulePlanner.framework */,
+				67803B8D53BB94E3D00516E5 /* Pods_SSUSchedulePlannerTests.framework */,
+				0D56827528EBE3B187D14634 /* Pods_SSUSchedulePlannerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09DB7C751FB15FC900C609D7 /* SSUSchedulePlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09DB7CA11FB15FC900C609D7 /* Build configuration list for PBXNativeTarget "SSUSchedulePlanner" */;
+			buildPhases = (
+				841E12783932E602D179178B /* [CP] Check Pods Manifest.lock */,
+				09DB7C721FB15FC900C609D7 /* Sources */,
+				09DB7C731FB15FC900C609D7 /* Frameworks */,
+				09DB7C741FB15FC900C609D7 /* Resources */,
+				6CDA2950B3E493271BB0FB5C /* [CP] Embed Pods Frameworks */,
+				F7030AC203724E06E005CAA6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSUSchedulePlanner;
+			productName = SSUSchedulePlanner;
+			productReference = 09DB7C761FB15FC900C609D7 /* SSUSchedulePlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09DB7C8C1FB15FC900C609D7 /* SSUSchedulePlannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09DB7CA41FB15FC900C609D7 /* Build configuration list for PBXNativeTarget "SSUSchedulePlannerTests" */;
+			buildPhases = (
+				F6C28AC7FE9BB868E731AFEE /* [CP] Check Pods Manifest.lock */,
+				09DB7C891FB15FC900C609D7 /* Sources */,
+				09DB7C8A1FB15FC900C609D7 /* Frameworks */,
+				09DB7C8B1FB15FC900C609D7 /* Resources */,
+				332012C13485F4E2A754EDD6 /* [CP] Embed Pods Frameworks */,
+				5CC5A79D7A63C64CBB5E5E1F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09DB7C8F1FB15FC900C609D7 /* PBXTargetDependency */,
+			);
+			name = SSUSchedulePlannerTests;
+			productName = SSUSchedulePlannerTests;
+			productReference = 09DB7C8D1FB15FC900C609D7 /* SSUSchedulePlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09DB7C971FB15FC900C609D7 /* SSUSchedulePlannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09DB7CA71FB15FC900C609D7 /* Build configuration list for PBXNativeTarget "SSUSchedulePlannerUITests" */;
+			buildPhases = (
+				D5EA1DD6BD69EAB081887BE3 /* [CP] Check Pods Manifest.lock */,
+				09DB7C941FB15FC900C609D7 /* Sources */,
+				09DB7C951FB15FC900C609D7 /* Frameworks */,
+				09DB7C961FB15FC900C609D7 /* Resources */,
+				E47B5CD4286DD1B92A5CF26C /* [CP] Embed Pods Frameworks */,
+				CE5C2AB3EF292247CC574FF0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09DB7C9A1FB15FC900C609D7 /* PBXTargetDependency */,
+			);
+			name = SSUSchedulePlannerUITests;
+			productName = SSUSchedulePlannerUITests;
+			productReference = 09DB7C981FB15FC900C609D7 /* SSUSchedulePlannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09DB7C6E1FB15FC900C609D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Ivan Lim";
+				TargetAttributes = {
+					09DB7C751FB15FC900C609D7 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					09DB7C8C1FB15FC900C609D7 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09DB7C751FB15FC900C609D7;
+					};
+					09DB7C971FB15FC900C609D7 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09DB7C751FB15FC900C609D7;
+					};
+				};
+			};
+			buildConfigurationList = 09DB7C711FB15FC900C609D7 /* Build configuration list for PBXProject "SSUSchedulePlanner" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09DB7C6D1FB15FC900C609D7;
+			productRefGroup = 09DB7C771FB15FC900C609D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09DB7C751FB15FC900C609D7 /* SSUSchedulePlanner */,
+				09DB7C8C1FB15FC900C609D7 /* SSUSchedulePlannerTests */,
+				09DB7C971FB15FC900C609D7 /* SSUSchedulePlannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09DB7C741FB15FC900C609D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09DB7C871FB15FC900C609D7 /* LaunchScreen.storyboard in Resources */,
+				3F06D4011FB93E7C00E19964 /* ssuLibrary.jpg in Resources */,
+				09DB7C841FB15FC900C609D7 /* Assets.xcassets in Resources */,
+				3FA871BE1FDB61B7001114C0 /* ssuSeawolf.jpeg in Resources */,
+				092AFB1A1FB3FCE6001ED884 /* ssuLogo.jpg in Resources */,
+				09DB7C7F1FB15FC900C609D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09DB7C8B1FB15FC900C609D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09DB7C961FB15FC900C609D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		332012C13485F4E2A754EDD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSUSchedulePlannerTests/Pods-SSUSchedulePlannerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CC5A79D7A63C64CBB5E5E1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSUSchedulePlannerTests/Pods-SSUSchedulePlannerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CDA2950B3E493271BB0FB5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SSUSchedulePlanner/Pods-SSUSchedulePlanner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CollapsibleTableSectionViewController/CollapsibleTableSectionViewController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollapsibleTableSectionViewController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSUSchedulePlanner/Pods-SSUSchedulePlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		841E12783932E602D179178B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSUSchedulePlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE5C2AB3EF292247CC574FF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSUSchedulePlannerUITests/Pods-SSUSchedulePlannerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5EA1DD6BD69EAB081887BE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSUSchedulePlannerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E47B5CD4286DD1B92A5CF26C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSUSchedulePlannerUITests/Pods-SSUSchedulePlannerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6C28AC7FE9BB868E731AFEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSUSchedulePlannerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7030AC203724E06E005CAA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSUSchedulePlanner/Pods-SSUSchedulePlanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09DB7C721FB15FC900C609D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F49D64A1FCDED31001D404A /* AddTermViewController.swift in Sources */,
+				092AFB131FB18306001ED884 /* MainMenuViewController.swift in Sources */,
+				3FDC0F6D1FD3A33E007334D2 /* Courses.swift in Sources */,
+				3F5CC1B71FD8ACD000B4EE79 /* Prerequisites.swift in Sources */,
+				09EEFC4A1FBBEE6B00EF6F04 /* CollapsibleTableViewHeader.swift in Sources */,
+				09EEFC4C1FBBEEE500EF6F04 /* CollapsibleTableViewCell.swift in Sources */,
+				09EEFC511FBBEFFF00EF6F04 /* ExampleData.swift in Sources */,
+				3F1FABFB1FD373A600666682 /* NetRequestHandler.swift in Sources */,
+				3F3442EE1FB29DD900DC077D /* MySchedulesViewController.swift in Sources */,
+				3F8B3C491FDE0CF9003823C5 /* Token+CoreDataProperties.swift in Sources */,
+				094EC7DE1FD2983E009A5F70 /* ClassInsideTermCell.swift in Sources */,
+				09DB7C7C1FB15FC900C609D7 /* LoginViewController.swift in Sources */,
+				3F0602EA1FCA688D00E5BB96 /* searchClassController.swift in Sources */,
+				3F3442EC1FB29DB100DC077D /* CreateScheduleViewController.swift in Sources */,
+				3FDC0F6B1FD39CC9007334D2 /* Course.swift in Sources */,
+				3F8B3C441FDDE04C003823C5 /* Class+CoreDataClass.swift in Sources */,
+				3FE957B91FB3B8030004479E /* MySchedulesDetailedViewController.swift in Sources */,
+				09DB7C7A1FB15FC900C609D7 /* AppDelegate.swift in Sources */,
+				3F49D6431FCDE82E001D404A /* Schedule+CoreDataClass.swift in Sources */,
+				3F2B78051FD22A67006DD663 /* AddClassViewController.swift in Sources */,
+				3F49D6441FCDE82E001D404A /* Schedule+CoreDataProperties.swift in Sources */,
+				3F5B3CF31FD5C9FA00F7B71F /* Term+CoreDataClass.swift in Sources */,
+				094063581FBBE66F00B7E705 /* ARRViewController.swift in Sources */,
+				3F5CC1B91FD8D12600B4EE79 /* EnrollmentRequirements.swift in Sources */,
+				092AFB151FB30ED1001ED884 /* ScheduleTableViewCell.swift in Sources */,
+				3FE957BB1FB3BA5C0004479E /* ClassTableViewCell.swift in Sources */,
+				3F8B3C451FDDE04C003823C5 /* Class+CoreDataProperties.swift in Sources */,
+				3F2B78071FD22F05006DD663 /* SearchResultsTableViewCell.swift in Sources */,
+				3F9848A71FD23DFD0095C7B4 /* ClassDescriptionViewController.swift in Sources */,
+				3F0602E81FCA46F600E5BB96 /* TermTableViewCell.swift in Sources */,
+				3F5B3CF41FD5C9FA00F7B71F /* Term+CoreDataProperties.swift in Sources */,
+				09DB7C821FB15FC900C609D7 /* SSUSchedulePlanner.xcdatamodeld in Sources */,
+				3FDC0F691FD39B60007334D2 /* Student.swift in Sources */,
+				09EEFC531FBBF0B200EF6F04 /* Extensions.swift in Sources */,
+				3F8B3C481FDE0CF9003823C5 /* Token+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09DB7C891FB15FC900C609D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09DB7C921FB15FC900C609D7 /* SSUSchedulePlannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09DB7C941FB15FC900C609D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09DB7C9D1FB15FC900C609D7 /* SSUSchedulePlannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09DB7C8F1FB15FC900C609D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09DB7C751FB15FC900C609D7 /* SSUSchedulePlanner */;
+			targetProxy = 09DB7C8E1FB15FC900C609D7 /* PBXContainerItemProxy */;
+		};
+		09DB7C9A1FB15FC900C609D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09DB7C751FB15FC900C609D7 /* SSUSchedulePlanner */;
+			targetProxy = 09DB7C991FB15FC900C609D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09DB7C7D1FB15FC900C609D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09DB7C7E1FB15FC900C609D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09DB7C851FB15FC900C609D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09DB7C861FB15FC900C609D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09DB7C9F1FB15FC900C609D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09DB7CA01FB15FC900C609D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09DB7CA21FB15FC900C609D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A05ECF471CC4FF8EAE6CFEDA /* Pods-SSUSchedulePlanner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSUSchedulePlanner/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Lim.SSUSchedulePlanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09DB7CA31FB15FC900C609D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B545520D2D8B42006726E7 /* Pods-SSUSchedulePlanner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSUSchedulePlanner/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Lim.SSUSchedulePlanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		09DB7CA51FB15FC900C609D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D2C39947856D317D6E58E49 /* Pods-SSUSchedulePlannerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSUSchedulePlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Lim.SSUSchedulePlannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSUSchedulePlanner.app/SSUSchedulePlanner";
+			};
+			name = Debug;
+		};
+		09DB7CA61FB15FC900C609D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACBC0D922C5E76E5BC27E7B5 /* Pods-SSUSchedulePlannerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSUSchedulePlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Lim.SSUSchedulePlannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSUSchedulePlanner.app/SSUSchedulePlanner";
+			};
+			name = Release;
+		};
+		09DB7CA81FB15FC900C609D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A67905BDDFDAB49E8AC76EBB /* Pods-SSUSchedulePlannerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSUSchedulePlannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Lim.SSUSchedulePlannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSUSchedulePlanner;
+			};
+			name = Debug;
+		};
+		09DB7CA91FB15FC900C609D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EFC03C1A48EDDE61982AB5 /* Pods-SSUSchedulePlannerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSUSchedulePlannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Lim.SSUSchedulePlannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSUSchedulePlanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09DB7C711FB15FC900C609D7 /* Build configuration list for PBXProject "SSUSchedulePlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09DB7C9F1FB15FC900C609D7 /* Debug */,
+				09DB7CA01FB15FC900C609D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09DB7CA11FB15FC900C609D7 /* Build configuration list for PBXNativeTarget "SSUSchedulePlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09DB7CA21FB15FC900C609D7 /* Debug */,
+				09DB7CA31FB15FC900C609D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09DB7CA41FB15FC900C609D7 /* Build configuration list for PBXNativeTarget "SSUSchedulePlannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09DB7CA51FB15FC900C609D7 /* Debug */,
+				09DB7CA61FB15FC900C609D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09DB7CA71FB15FC900C609D7 /* Build configuration list for PBXNativeTarget "SSUSchedulePlannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09DB7CA81FB15FC900C609D7 /* Debug */,
+				09DB7CA91FB15FC900C609D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09DB7C801FB15FC900C609D7 /* SSUSchedulePlanner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09DB7C811FB15FC900C609D7 /* SSUSchedulePlanner.xcdatamodel */,
+			);
+			currentVersion = 09DB7C811FB15FC900C609D7 /* SSUSchedulePlanner.xcdatamodel */;
+			path = SSUSchedulePlanner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 09DB7C6E1FB15FC900C609D7 /* Project object */;
+}
